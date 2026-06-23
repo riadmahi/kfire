@@ -17,7 +17,7 @@ data class FirebaseIosModules(
 class IosConfigGenerator(private val projectRoot: Path) {
 
     companion object {
-        const val FIREBASE_IOS_VERSION = "11.6.0"
+        const val FIREBASE_IOS_VERSION = "12.15.0"
     }
 
     fun writeGoogleServiceInfoPlist(content: String) {

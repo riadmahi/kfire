@@ -15,7 +15,7 @@ kotlin = "2.4.0"
 
 # Firebase
 firebaseAndroidBom = "34.15.0"
-firebaseIos = "11.6.0"
+firebaseIos = "12.15.0"
 
 # Coroutines
 coroutines = "1.11.0"
