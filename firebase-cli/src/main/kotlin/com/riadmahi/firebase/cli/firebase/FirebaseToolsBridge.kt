@@ -3,7 +3,7 @@ package com.riadmahi.firebase.cli.firebase
 import com.riadmahi.firebase.cli.utils.ProcessRunner
 import kotlinx.serialization.json.*
 import java.net.HttpURLConnection
-import java.net.URL
+import java.net.URI
 
 class FirebaseToolsBridge {
     private val runner = ProcessRunner()
@@ -52,7 +52,7 @@ class FirebaseToolsBridge {
 
     private fun exchangeRefreshToken(refreshToken: String): String? {
         return try {
-            val url = URL("https://oauth2.googleapis.com/token")
+            val url = URI("https://oauth2.googleapis.com/token").toURL()
             val connection = url.openConnection() as HttpURLConnection
             connection.requestMethod = "POST"
             connection.doOutput = true
