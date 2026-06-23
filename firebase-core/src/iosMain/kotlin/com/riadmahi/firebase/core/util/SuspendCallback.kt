@@ -68,7 +68,7 @@ fun NSError.toException(): Exception {
     return FirebaseNativeException(
         code = this.code.toInt(),
         domain = this.domain ?: "Unknown",
-        message = this.localizedDescription ?: "Unknown error"
+        message = this.localizedDescription
     )
 }
 
