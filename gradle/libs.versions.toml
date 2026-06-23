@@ -18,21 +18,21 @@ firebaseAndroidBom = "34.15.0"
 firebaseIos = "11.6.0"
 
 # Coroutines
-coroutines = "1.10.2"
+coroutines = "1.11.0"
 
 # Serialization
-kotlinxSerialization = "1.7.3"
+kotlinxSerialization = "1.9.0"
 kotlinxDatetime = "0.6.1"
 
 # CLI
-clikt = "5.0.3"
+clikt = "5.1.0"
 mordant = "3.0.2"
 okio = "3.9.1"
 jline = "3.26.3"
 slf4j = "2.0.13"
 
 # HTTP Client
-ktor = "3.3.3"
+ktor = "3.5.0"
 
 # Publishing
 vanniktech = "0.30.0"
