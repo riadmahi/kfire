@@ -58,7 +58,7 @@ class MessagingTypesTest {
             collapseKey = "news_updates",
             data = emptyMap(),
             notification = notification,
-            sentTime = kotlinx.datetime.Clock.System.now().toEpochMilliseconds(),
+            sentTime = kotlin.time.Clock.System.now().toEpochMilliseconds(),
             ttl = 86400
         )
 

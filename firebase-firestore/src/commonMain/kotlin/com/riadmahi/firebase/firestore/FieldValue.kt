@@ -46,10 +46,10 @@ expect class Timestamp {
 
     companion object {
         fun now(): Timestamp
-        fun fromDate(date: kotlinx.datetime.Instant): Timestamp
+        fun fromDate(date: kotlin.time.Instant): Timestamp
     }
 
-    fun toDate(): kotlinx.datetime.Instant
+    fun toDate(): kotlin.time.Instant
 }
 
 /**

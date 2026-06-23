@@ -2,7 +2,7 @@ package com.riadmahi.firebase.firestore
 
 import com.google.firebase.firestore.FieldValue as AndroidFieldValue
 import com.google.firebase.Timestamp as AndroidTimestamp
-import kotlinx.datetime.Instant
+import kotlin.time.Instant
 
 actual class FieldValue private constructor(
     internal val android: AndroidFieldValue

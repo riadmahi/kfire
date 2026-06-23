@@ -12,7 +12,7 @@ import cocoapods.FirebaseFirestoreInternal.FIRPersistentCacheSettings
 import com.riadmahi.firebase.core.FirebaseApp
 import com.riadmahi.firebase.core.FirebaseResult
 import com.riadmahi.firebase.core.util.awaitVoid
-import kotlinx.datetime.Instant
+import kotlin.time.Instant
 import platform.Foundation.NSDate
 import platform.Foundation.timeIntervalSince1970
 

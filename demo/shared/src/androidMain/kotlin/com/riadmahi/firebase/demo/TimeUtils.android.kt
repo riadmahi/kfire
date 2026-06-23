@@ -1,6 +1,6 @@
 package com.riadmahi.firebase.demo
 
-import kotlinx.datetime.Clock
+import kotlin.time.Clock
 
 actual object TimeUtils {
     actual fun currentTimeMillis(): Long = Clock.System.now().toEpochMilliseconds()
