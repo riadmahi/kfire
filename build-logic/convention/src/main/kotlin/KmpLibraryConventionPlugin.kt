@@ -2,6 +2,7 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
 import org.jetbrains.kotlin.gradle.dsl.KotlinMultiplatformExtension
+import org.jetbrains.kotlin.gradle.dsl.KotlinJvmCompilerOptions
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 class KmpLibraryConventionPlugin : Plugin<Project> {
@@ -23,6 +24,18 @@ class KmpLibraryConventionPlugin : Plugin<Project> {
                 // iOS targets
                 iosArm64()
                 iosSimulatorArm64()
+
+                // Pin the JVM bytecode target so published artifacts stay stable
+                // regardless of the build JDK (AGP 9 otherwise follows the toolchain).
+                targets.configureEach {
+                    compilations.configureEach {
+                        compileTaskProvider.configure {
+                            (compilerOptions as? KotlinJvmCompilerOptions)
+                                ?.jvmTarget
+                                ?.set(JvmTarget.JVM_11)
+                        }
+                    }
+                }
 
                 sourceSets.apply {
                     // No BOM dependencies - Maven Central requires explicit versions

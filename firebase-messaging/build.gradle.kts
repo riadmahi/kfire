@@ -4,7 +4,7 @@ plugins {
 }
 
 kotlin {
-    androidLibrary {
+    android {
         namespace = "com.riadmahi.firebase.messaging"
         compileSdk = 36
         minSdk = 24

@@ -16,7 +16,7 @@ tasks.matching {
 }
 
 kotlin {
-    androidLibrary {
+    android {
         namespace = "com.riadmahi.firebase.demo.shared"
         compileSdk = libs.versions.android.compileSdk.get().toInt()
         minSdk = libs.versions.android.minSdk.get().toInt()

@@ -8,7 +8,6 @@ plugins {
     alias(libs.plugins.kotlinSerialization) apply false
     alias(libs.plugins.vanniktechPublish) apply false
     alias(libs.plugins.googleServices) apply false
-    alias(libs.plugins.kotlinAndroid) apply false
 }
 
 allprojects {
