@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
+
 plugins {
     id("convention.kmp-library")
     id("convention.maven-publish")
@@ -8,6 +10,19 @@ kotlin {
         namespace = "com.riadmahi.firebase.auth"
         compileSdk = 36
         minSdk = 24
+    }
+
+    js {
+        browser()
+        nodejs()
+        binaries.library()
+    }
+
+    @OptIn(ExperimentalWasmDsl::class)
+    wasmJs {
+        browser()
+        nodejs()
+        binaries.library()
     }
 
     cocoapods {
