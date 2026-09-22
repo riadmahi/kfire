@@ -1,44 +1,44 @@
 [versions]
-agp = "9.2.0"
+agp = "9.4.1"
 android-compileSdk = "36"
 android-minSdk = "24"
 android-targetSdk = "36"
-androidx-activity = "1.12.2"
-androidx-appcompat = "1.7.1"
-androidx-core = "1.17.0"
+androidx-activity = "1.13.0"
+androidx-appcompat = "1.8.0"
+androidx-core = "1.19.0"
 androidx-espresso = "3.7.0"
-androidx-lifecycle = "2.9.6"
+androidx-lifecycle = "2.11.0"
 androidx-testExt = "1.3.0"
-composeMultiplatform = "1.11.0"
+composeMultiplatform = "1.12.1"
 junit = "4.13.2"
-kotlin = "2.4.0"
+kotlin = "2.4.20"
 
 # Firebase
-firebaseAndroidBom = "34.15.0"
-firebaseIos = "12.15.0"
+firebaseAndroidBom = "34.19.0"
+firebaseIos = "12.19.0"
 
 # Coroutines
 coroutines = "1.11.0"
 
 # Serialization
-kotlinxSerialization = "1.9.0"
-kotlinxDatetime = "0.7.1"
+kotlinxSerialization = "1.11.0"
+kotlinxDatetime = "0.8.0"
 
 # CLI
 clikt = "5.1.0"
-mordant = "3.0.2"
-okio = "3.9.1"
-jline = "3.26.3"
-slf4j = "2.0.13"
+mordant = "3.1.0"
+okio = "3.18.2"
+jline = "4.4.5"
+slf4j = "2.0.20"
 
 # HTTP Client
-ktor = "3.5.0"
+ktor = "3.6.0"
 
 # Publishing
-vanniktech = "0.30.0"
+vanniktech = "0.37.0"
 
 # Google Services
-googleServices = "4.4.2"
+googleServices = "4.5.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -60,16 +60,16 @@ kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutine
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDatetime" }
 
-# Firebase Android (versions from BOM 34.15.0)
+# Firebase Android (versions from BOM 34.19.0)
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseAndroidBom" }
-firebase-common-android = { module = "com.google.firebase:firebase-common", version = "22.1.0" }
-firebase-auth-android = { module = "com.google.firebase:firebase-auth", version = "24.1.0" }
-firebase-firestore-android = { module = "com.google.firebase:firebase-firestore", version = "26.4.0" }
-firebase-storage-android = { module = "com.google.firebase:firebase-storage", version = "22.0.1" }
-firebase-messaging-android = { module = "com.google.firebase:firebase-messaging", version = "25.1.0" }
+firebase-common-android = { module = "com.google.firebase:firebase-common", version = "22.2.1" }
+firebase-auth-android = { module = "com.google.firebase:firebase-auth", version = "24.2.0" }
+firebase-firestore-android = { module = "com.google.firebase:firebase-firestore", version = "26.6.0" }
+firebase-storage-android = { module = "com.google.firebase:firebase-storage", version = "22.0.2" }
+firebase-messaging-android = { module = "com.google.firebase:firebase-messaging", version = "25.1.3" }
 firebase-analytics-android = { module = "com.google.firebase:firebase-analytics", version = "23.2.0" }
 firebase-config-android = { module = "com.google.firebase:firebase-config", version = "23.1.0" }
-firebase-crashlytics-android = { module = "com.google.firebase:firebase-crashlytics", version = "20.0.6" }
+firebase-crashlytics-android = { module = "com.google.firebase:firebase-crashlytics", version = "20.1.1" }
 
 # CLI
 clikt = { module = "com.github.ajalt.clikt:clikt", version.ref = "clikt" }

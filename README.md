@@ -196,7 +196,7 @@ dependencies {
 ```kotlin
 // Root build.gradle.kts
 plugins {
-    id("com.google.gms.google-services") version "4.4.2" apply false
+    id("com.google.gms.google-services") version "4.5.0" apply false
 }
 
 // App build.gradle.kts
@@ -239,7 +239,7 @@ Then run `pod install` and open `.xcworkspace`.
 |----------|-----------------|
 | Android | API 24 (Android 7.0) |
 | iOS | 15.0 |
-| Kotlin | 2.3.0 |
+| Kotlin | 2.4.20 |
 
 ---
 

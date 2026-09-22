@@ -178,14 +178,14 @@ private fun NSData.toByteArray(): ByteArray {
 
 private fun StorageMetadata.toIos(): FIRStorageMetadata {
     return FIRStorageMetadata().apply {
-        contentType?.let { setContentType(it) }
-        cacheControl?.let { setCacheControl(it) }
-        contentDisposition?.let { setContentDisposition(it) }
-        contentEncoding?.let { setContentEncoding(it) }
-        contentLanguage?.let { setContentLanguage(it) }
-        if (customMetadata.isNotEmpty()) {
+        this@toIos.contentType?.let { setContentType(it) }
+        this@toIos.cacheControl?.let { setCacheControl(it) }
+        this@toIos.contentDisposition?.let { setContentDisposition(it) }
+        this@toIos.contentEncoding?.let { setContentEncoding(it) }
+        this@toIos.contentLanguage?.let { setContentLanguage(it) }
+        if (this@toIos.customMetadata.isNotEmpty()) {
             @Suppress("UNCHECKED_CAST")
-            setCustomMetadata(customMetadata as Map<Any?, *>)
+            setCustomMetadata(this@toIos.customMetadata as Map<Any?, *>)
         }
     }
 }

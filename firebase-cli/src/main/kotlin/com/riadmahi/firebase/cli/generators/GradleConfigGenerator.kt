@@ -11,8 +11,8 @@ import kotlin.io.path.*
 class GradleConfigGenerator(private val projectRoot: Path) {
 
     companion object {
-        private const val GOOGLE_SERVICES_VERSION = "4.4.2"
-        private const val CRASHLYTICS_VERSION = "3.0.4"
+        private const val GOOGLE_SERVICES_VERSION = "4.5.0"
+        private const val CRASHLYTICS_VERSION = "3.0.8"
         private const val GOOGLE_SERVICES_PLUGIN_ID = "com.google.gms.google-services"
         private const val CRASHLYTICS_PLUGIN_ID = "com.google.firebase.crashlytics"
 

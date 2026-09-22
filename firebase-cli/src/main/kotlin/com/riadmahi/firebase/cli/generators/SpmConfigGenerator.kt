@@ -14,7 +14,7 @@ class SpmConfigGenerator(private val projectRoot: Path) {
 
     companion object {
         const val FIREBASE_REPO_URL = "https://github.com/firebase/firebase-ios-sdk.git"
-        const val FIREBASE_VERSION = "12.15.0"
+        const val FIREBASE_VERSION = "12.19.0"
 
         /**
          * Mapping from FirebaseIosModules flags to SPM product names.
